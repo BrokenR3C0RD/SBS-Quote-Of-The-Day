@@ -24,10 +24,12 @@ var parse = function(file){
 
   var quote = {
     quote: "",
-    from:  ""
+    from:  "",
+    id: -1
   };
 
   var out = [];
+  var numQuotes = 0;
 
   data.split("\n").forEach(function(line){
     var data = PARSER_RE.exec(line.trim());
@@ -49,18 +51,24 @@ var parse = function(file){
     } else if(data[3] != null && quote.quote !== ""){
       quote.from = data[3];
       quote.quote = quote.quote.trim();
+      quote.id = numQuotes;
       tmp.quotes.push(quote);
       quote = {
         quote: "",
-        from:  ""
+        from:  "",
+        id: -1
       };
+      numQuotes++;
     } else if(data[4] != null){
       done = true;
       quote.quote += data[4] + "\n";
     }
   });
   out.push(tmp);
-  return out;
+  return {
+    quotes: out,
+    amount: numQuotes
+  };
 };
 
 module.exports = parse;
