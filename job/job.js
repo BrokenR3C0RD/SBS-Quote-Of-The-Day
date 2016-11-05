@@ -29,7 +29,7 @@ var templateData = {
   quoteBy:     quote.from,
   numQuotes:   quotes.amount,
   id:          quote.id,
-  botUser:     username
+  botUser:     USERNAME
 };
 
 var pm = template(pmTemplate, templateData);
