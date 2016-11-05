@@ -61,7 +61,7 @@ var parse = function(file){
       numQuotes++;
     } else if(data[4] != null){
       done = true;
-      quote.quote += data[4] + "\n";
+      quote.quote += data[4].replace(/\\-/g, "-") + "\n";
     }
   });
   out.push(tmp);

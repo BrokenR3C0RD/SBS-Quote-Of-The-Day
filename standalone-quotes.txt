@@ -1,0 +1,51 @@
+# Make sure that you start your section of quotes with metadata like shown below.
+# Yes, this is used internally by QotD, and it makes it easier to remember who added what quotes.
+
+# From should be your SmileBASIC Source username.
+# Date should be the date (MM/DD/YY) you added these to the quotes.
+# Description should describe the quotes added.
+
+# Beginning of quotes:
+#| From:        BrokenR3C0RD
+#| Date:        10/03/16
+#| Description: These are the first quotes I added to the bot
+
+Insanity is doing the same thing over and over and expecting different results.
+- Albert Einstein
+
+Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the universe trying to build bigger and better idiots.
+So far, the universe is winning.
+- Rick Cook
+
+Talk is cheap. Show me the code.
+- Linus Torvalds
+
+Most programmers do programming not because they expect to get paid or get adulation by the public,
+but because it is fun to program.
+- Linus Torvalds
+
+Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.
+- Rick Osborne
+
+Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+- Martin Fowler
+
+Programming is like sex. One mistake and you have to support it for the rest of your life.
+- Michael Sinz
+
+
+#| From: 12Me21
+#| Date: 11/04/16
+#| Description: High quality quote pack 1
+
+I DON’T WANT TO STUDY HARD OR THINK MORE THAN NEEDED!
+- Wang-PAKU
+
+OOOOHHHH MMMMYYYYYY GGGOOOOOOSSSHH!!! I can't stand waiting for this game! message me a BETA key AT LEAAAAST!! If not I understand :P but this looks flipping AWSOME!!!
+- miiverse user
+
+Yo you gotta keep being rself if you'd that then you will find your special someone being yourself is ALWAYS the key
+- miiverse user
+
+The sand can be eaten.
+- atm959
