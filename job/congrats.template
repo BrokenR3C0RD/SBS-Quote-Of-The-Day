@@ -1,0 +1,9 @@
+Congrats, {user}! Your quote was chosen randomly by {botUser} for their Quote of the Day bot!
+
+Quote:
+{quote}
+- {quoteBy}
+
+Quote {id}/{numQuotes}
+
+Bot by: BrokenR3C0RD

@@ -1,18 +1,20 @@
-// QotD Cron
+// QotD Job
+
 var fs = require("fs");
 var request = require("request");
-var parseQuotes = require("/home/BrokenR3C0RD/repos/qotd/quotes.js");
+var parseQuotes = require("./quotes.js");
 var template = require("string-template");
 
+// Edit here
 const USERNAME = "USERNAME";
 const PASSWORD = "MD5_HASH_0F_PASSWORD";
 
 const URL = "https://smilebasicsource.com";
 
-var quotes = parseQuotes("/home/BrokenR3C0RD/repos/qotd/quotes.txt");
+var quotes = parseQuotes("quotes.txt");
 
-var pmTemplate = fs.readFileSync("/home/BrokenR3C0RD/qotd/congrats.template", "utf8");
-var profileTemplate = fs.readFileSync("/home/BrokenR3C0RD/qotd/profile.template", "utf8");
+var pmTemplate = fs.readFileSync("congrats.template", "utf8");
+var profileTemplate = fs.readFileSync("profile.template", "utf8");
 
 // Let's choose everything now
 var tmp = quotes.quotes[Math.floor(Math.random() * quotes.quotes.length)];
@@ -26,7 +28,8 @@ var templateData = {
   quote:       quote.quote,
   quoteBy:     quote.from,
   numQuotes:   quotes.amount,
-  quoteNum:    quote.id
+  id:          quote.id,
+  botUser:     username
 };
 
 var pm = template(pmTemplate, templateData);

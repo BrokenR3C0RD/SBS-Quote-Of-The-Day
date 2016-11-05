@@ -51,7 +51,7 @@ var parse = function(file){
     } else if(data[3] != null && quote.quote !== ""){
       quote.from = data[3];
       quote.quote = quote.quote.trim();
-      quote.id = numQuotes;
+      quote.id = numQuotes + 1;
       tmp.quotes.push(quote);
       quote = {
         quote: "",
