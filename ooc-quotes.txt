@@ -1,4 +1,4 @@
-#| From:        Trinitro21
+#| From:        BrokenR3C0RD
 #| Date:        10/05/16
 #| Description: outofcon.txt quotes converted to quotes.txt
 
