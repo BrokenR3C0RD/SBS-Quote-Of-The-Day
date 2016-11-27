@@ -19,6 +19,7 @@ var parse = function(file){
     meta:   {},
     quotes: []
   };
+  var allQuotes = [];
 
   var done = false;
 
@@ -53,6 +54,11 @@ var parse = function(file){
       quote.quote = quote.quote.trim();
       quote.id = numQuotes + 1;
       tmp.quotes.push(quote);
+      allQuotes.push({
+        meta: tmp.meta,
+        quote: quote.quote,
+        from: quote.from
+      });
       quote = {
         quote: "",
         from:  "",
@@ -67,7 +73,8 @@ var parse = function(file){
   out.push(tmp);
   return {
     quotes: out,
-    amount: numQuotes
+    amount: numQuotes,
+    all: allQuotes
   };
 };
 
