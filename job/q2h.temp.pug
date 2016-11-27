@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta(charset="utf8")
+    title quotes.txt -> HTML conversion (#{amount} quotes)
+    style.
+      * {
+        font-family: Arial;
+      }
+      li {
+        white-space: pre-line;
+      }
+  body
+    h1 quotes.txt -> HTML convertion (#{amount} quotes)
+    each collection in quotes
+      div
+        h3 #{collection.meta.description}
+        h5 Added by #{collection.meta.from}
+        ul
+          each quote in collection.quotes
+            li
+              i #{quote.quote}
+              br
+              span - #{quote.from}
+    

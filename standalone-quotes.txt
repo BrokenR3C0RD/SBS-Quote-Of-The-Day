@@ -8,7 +8,7 @@
 # Beginning of quotes:
 #| From:        BrokenR3C0RD
 #| Date:        10/03/16
-#| Description: These are the first quotes I added to the bot
+#| Description: First quotes added to the bot
 
 Insanity is doing the same thing over and over and expecting different results.
 - Albert Einstein

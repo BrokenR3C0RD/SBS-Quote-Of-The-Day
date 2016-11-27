@@ -1,6 +1,5 @@
 var fs = require("fs");
 
-
 var inp = fs.readFileSync("keyreq.txt", "utf8").split("\n");
 var out = fs.createWriteStream("keyreq-quotes.txt");
 
